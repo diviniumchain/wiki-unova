@@ -10,6 +10,10 @@
 
 - confugure "process.env.PORT" is considered by heroku and "port" is local  for `app.listen(process.env.PORT || port);`
 
-
-**heroku free dynamo bug when building or running tsc/npm run build**
+# Problem
+**Problem heroku free dynamo bug when building or running tsc/npm run build**
 ![herokuIssues](/images/heroku-heap-error-for-typescript-node-build.png)
+
+# Solution 
+
+- only configure in package.json add a new line in scripts for `node dist/server.js`
