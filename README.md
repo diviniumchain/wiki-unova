@@ -10,6 +10,10 @@
 
 - confugure "process.env.PORT" is considered by heroku and "port" is local  for `app.listen(process.env.PORT || port);`
 
+**local check heroku commands***
+-  `heroku logs --tail --app unova-consumerapp` (check logs)
+-  `heroku run bash -a unova-consumerapp` ( bash into heroku)
+
 # Problem
 **Problem heroku free dynamo bug when building or running tsc/npm run build**
 ![herokuIssues](/images/heroku-heap-error-for-typescript-node-build.png)
